@@ -1,0 +1,12 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+@layer base {
+  body { @apply bg-paper text-navy-900 antialiased dark:bg-navy-950 dark:text-slate-100; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-volt-500; }
+}
+@layer components {
+  .card { @apply rounded-2xl border border-mist bg-white p-5 shadow-sm dark:border-white/10 dark:bg-navy-900; }
+  .btn-primary { @apply inline-flex items-center gap-2 rounded-xl bg-volt-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-volt-600; }
+}
+@layer components {
+  .input { @apply w-full rounded-xl border border-mist bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-navy-950; }
+}

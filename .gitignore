@@ -1,0 +1,10 @@
+node_modules/
+dist/
+target/
+.env
+.env.*
+!.env.example
+uploads/
+*.log
+.claude/
+database/delete_user_*.sql
