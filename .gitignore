@@ -8,3 +8,4 @@ uploads/
 *.log
 .claude/
 database/delete_user_*.sql
+*.timestamp-*.mjs
