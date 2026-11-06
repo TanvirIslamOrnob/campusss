@@ -1,5 +1,6 @@
 // Single place for all backend calls. No mock data: if the backend is down, calls fail honestly.
-const BASE = '/api';
+// Locally the Vite dev server proxies /api to the backend. On GitHub Pages, set VITE_API_URL to the hosted backend (e.g. https://campusx-api.example.com).
+const BASE = `${(import.meta.env.VITE_API_URL || '').replace(/\/$/, '')}/api`;
 const KEY = 'campusx-token';
 
 // The JWT lives in localStorage (simple, but readable by any script on the page: keep the app free of XSS).
